@@ -148,6 +148,11 @@
     border-bottom-right-radius: 10px;
 }
 
+.random form button:hover{
+    background-color: #f6f0de;
+    color: #000000;
+}
+
 
 .add{
     margin-top: 50px;
@@ -195,7 +200,6 @@
     width: 50%;
     height: 50px;
     background-color: #000000;
-    border: none;
     border-bottom: 1px solid #f6f0de;
     color: #f6f0de;
     font-family: 'Roboto', sans-serif;
@@ -204,4 +208,11 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+.showBtn:hover{
+    transform: scale(1.1);
+    box-shadow:  5px 5px 10px #d1ccbd,
+    -5px -5px 10px #ffffff;
+    border-radius: 10px;
 }
