@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Nav';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
+import Random from './components/pages/Random';
+import AllFilm from './components/pages/AllFilm';
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Router>
+    <Navbar />
+    <Routes>
+      <Route path='/random' element={<Random/>}/>
+      <Route path='/' element={<AllFilm/>}/>
+    </Routes>
+   </Router>
+   </div>
   );
 }
 
