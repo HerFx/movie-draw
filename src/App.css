@@ -157,6 +157,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .addform{
@@ -173,6 +174,7 @@
     background-color: #000000;
     padding: 20px;
     margin-bottom: 60px;
+    transition: all 0.2s ease;
 }
 
 .addform input, select {

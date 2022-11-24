@@ -48,7 +48,7 @@ export default function Random() {
       <form onSubmit={handleFilter}>
         <select onChange={handleChange}>
           <option value="All">All</option>
-          <option value="Movie">Movie</option>
+          <option value="Serial">Serial</option>
           <option value="Film">Film</option>
           <option value="Animation">Animation</option>
         </select>

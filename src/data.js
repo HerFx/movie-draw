@@ -51,7 +51,7 @@ const movies = [
         id: 9,
         title: 'Nawiedzony Dom Na Wzgórzu',
         where: 'Netflix',
-        type: 'Movie'
+        type: 'Serial'
     },
     {
         id: 10,
@@ -99,7 +99,7 @@ const movies = [
         id: 17,
         title: 'Obserwator',
         where: 'Netflix',
-        type: 'Movie'
+        type: 'Serial'
     },
 ]
 

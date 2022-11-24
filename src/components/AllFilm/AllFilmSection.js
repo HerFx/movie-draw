@@ -3,6 +3,7 @@ import movie from '../../data'
 import Card from '../Card'
 import { useState } from 'react';
 import useLocalStorage from '../useLocalStorage';
+import { motion } from 'framer-motion';
 
 export default function AllFilmSection() {
 
@@ -80,7 +81,11 @@ export default function AllFilmSection() {
     <h1 className='moviesTitle'><i class="fa-solid fa-film"></i>Wszystkie Filmy Do Obejrzenia</h1>
     <button  className='showBtn' onClick={showForm}>{show?<i class="fa-solid fa-minus"></i>:<i class="fa-solid fa-plus"></i>}Dodaj Film</button>
     <div className='add'>
-       {show && <form className='addform' onSubmit={addMovie}>
+       {show && <motion.form className='addform' onSubmit={addMovie}
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+       >
             <input type="text" placeholder="Title" value={input.title} onChange={addTitle}/>
             <select onChange={addWhere}>
               <option value="Netflix">Netflix</option>
@@ -89,13 +94,13 @@ export default function AllFilmSection() {
             </select>
             {/* <input type="text" placeholder="Where" value={input.where} onChange={addWhere}/> */}
             <select onChange={addType}>
-              <option value="Movie">Movie</option>
+              <option value="Serial">Serial</option>
               <option value="Film">Film</option>
               <option value="Animation">Animation</option>
             </select>
             {/* <input type="text" placeholder="Type" value={input.type} onChange={addType}/> */}
             <button>Add</button>
-        </form>}
+        </motion.form>}
     </div>
     <div className='movieBox'>
         {movies.map((movie, index) => <Card key={index} onClick={deleteMovie}  src={movie.img} title={movie.title} where={movie.where} type={movie.type}/>)}
