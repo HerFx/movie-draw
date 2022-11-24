@@ -3,7 +3,7 @@ const movies = [
         id: 1,
         title: 'Harry Potter',
         where: 'No Data',
-        type: 'Movie'
+        type: 'Serial'
     },
     {
         id: 2,

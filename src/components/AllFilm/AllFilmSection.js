@@ -14,7 +14,7 @@ export default function AllFilmSection() {
     type: ""
   })
 
-  const [movies, setMovies] = (useLocalStorage('movies', movie))
+  const [movies, setMovies] = (useLocalStorage('AllMovies', movie))
   const [show, setShow] = useState(false)
 
 
