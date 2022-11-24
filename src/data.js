@@ -95,6 +95,12 @@ const movies = [
         where: 'Netflix',
         type: 'Animation'
     },
+    {
+        id: 17,
+        title: 'Obserwator',
+        where: 'Netflix',
+        type: 'Movie'
+    },
 ]
 
 export default movies;

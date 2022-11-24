@@ -13,7 +13,7 @@ export default function AllFilmSection() {
     type: ""
   })
 
-  const [movies, setMovies] = useLocalStorage('film', movie)
+  const [movies, setMovies] = (useLocalStorage('movies', movie))
   const [show, setShow] = useState(false)
 
 
@@ -50,6 +50,19 @@ export default function AllFilmSection() {
       type: ""
     })
   }
+
+  // const addMovie = (e) => {
+  //   e.preventDefault()
+  //   setNewMovie([
+  //     ...newMovie,
+  //     input
+  //   ])
+  //   setInput({
+  //     title: "",
+  //     where: "",
+  //     type: ""
+  //   })
+  // }
 
   const deleteMovie = (id) => {
     setMovies(movies.filter((movie) => movie.id !== id))
