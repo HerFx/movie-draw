@@ -212,7 +212,49 @@
 
 .showBtn:hover{
     transform: scale(1.1);
-    box-shadow:  5px 5px 10px #d1ccbd,
+    box-shadow:  5px 5px 10px #d1ccbd,  
     -5px -5px 10px #ffffff;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .addform input, select {
+        width: 100%;
+    }
+
+    .addform{
+        width: 50%;
+    }
+
+    .card{
+        width: 40%;
+    }
+
+    .random form{
+        width: 80%;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .addform{
+        width: 80%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .moviesTitle{
+        font-size: 1.5rem;
+    }
+
+    .nav-menu{
+       padding: 0;
+    }
+
+    .nav-item a{
+        font-size: 1.2rem;
+    }
 }
